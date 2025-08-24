@@ -6,11 +6,12 @@
     "scripts": {
         "dev": "node server.js",
         "dev:vite": "vite",
+        "start": "node server.js",
         "kill": "fuser -k 5000/tcp",
         "build": "tsc -b --noCheck && vite build",
         "lint": "eslint .",
         "optimize": "vite optimize",
-        "preview": "vite preview"
+        "preview": "vite preview --port 3000"
     },
     "dependencies": {
         "@github/spark": "^0.0.1",
