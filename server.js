@@ -104,7 +104,6 @@ app.post('/api/chat', async (req, res) => {
       },
       body: JSON.stringify({
         messages,
-        temperature: 0.7
       }),
     });
 
@@ -147,7 +146,6 @@ app.post('/api/translate', async (req, res) => {
       },
       body: JSON.stringify({
         messages,
-        temperature: 0.3
       }),
     });
 
@@ -190,7 +188,6 @@ app.post('/api/explanation', async (req, res) => {
       },
       body: JSON.stringify({
         messages,
-        temperature: 0.7,
         response_format: { type: 'json_object' }
       }),
     });
